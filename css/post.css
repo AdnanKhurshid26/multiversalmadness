@@ -133,7 +133,7 @@ nav {
 .content {
     width: 100vw;
     padding: 6vw;
-    padding-top: 8vw;
+    padding-top: 6vw;
 }
 
 h1 {
@@ -149,7 +149,7 @@ h1 {
     width: 20vw;
     height: 4vw;
     gap: 0.6vw;
-    margin-top: 2vw;
+    margin-top: 1.5vw;
 }
 
 .author img {
@@ -164,4 +164,52 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.title-img {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-img img {
+    max-width: 90%;
+    max-height: 30vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.content-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1vw;
+    margin-top: 3vw;
+}
+
+.content-body p {
+    font-size: 1.2vw;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.content-body {
+    font-size: 2.5vw;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.mid-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.mid-img img {
+    max-width: 80%;
+    max-height: 40vw;
+    object-fit: cover;
 }
