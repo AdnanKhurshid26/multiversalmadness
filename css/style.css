@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
+/***************************************************************************************/
+
+
+/******************** HEADER AND NAVBAR ******************* */
+
+
+/***************************************************************************************/
+
+.hero--section {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-color: #252525;
+    gap: 0vw;
+}
+
+.hero--section img {
+    width: 50%;
+}
+
+.hero--section h2 {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 2.4vw;
+}
+
+button {
+    margin-top: 2vw;
+    border: solid transparent;
+    color: white;
+    background-color: #D0021B;
+    padding: 1vw 2vw;
+    font-family: "Nunito Sans", sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+button:hover {
+    background-color: #940011;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1vw 1.2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+}
+
+.logo img {
+    height: 3vw;
+}
+
+.main-nav-list {
+    display: flex;
+    gap: 1.6vw;
+    font-family: "Nunito Sans";
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-nav-link:visited,
+.main-nav-link:link {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.8vw;
+    font-weight: 800;
+    letter-spacing: 3.2px;
+    line-height: 1.1;
+    padding: 0.7rem 1.4rem;
+    border: solid 2px transparent;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #D0021B;
+}
+
+.btn-cta:visited,
+.btn-cta:link {
+    color: #D0021B;
+    border-bottom: solid 2px #D0021B;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+    color: #D0021B;
+}
+
+
+/***************** BURGER MENU *********************/
+
+.burger {
+    display: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.burger div {
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 8vw;
+    transition: all 0.5s;
+}
+
+.fa-times {
+    color: #fff;
+    font-size: 8vw;
+    transition: all 0.5s;
+}
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.514);
+    transition: all 0.5s ease-in-out;
+}
