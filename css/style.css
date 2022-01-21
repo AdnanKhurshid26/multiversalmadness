@@ -186,3 +186,96 @@ nav {
     background-color: rgba(0, 0, 0, 0.514);
     transition: all 0.5s ease-in-out;
 }
+
+.recent-posts {
+    width: 100vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-posts h2 {
+    font-size: 2.2vw;
+    padding: 10px;
+    border-bottom: solid 3.5px #D0021B;
+    display: inline-block;
+}
+
+.recent-posts-container {
+    background-color: #fff;
+}
+
+.cards {
+    width: 100vw;
+    padding: 3vw 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+}
+
+.card {
+    padding: 1.2vw;
+    height: 36vw;
+    border-radius: 0.4vw;
+    background-color: #252525;
+}
+
+.card:hover {
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.card img {
+    height: 14vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h2 {
+    font-size: 2vw;
+    font-family: "Roboto";
+    color: #D0021B;
+}
+
+a p {
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-size: 1vw;
+    text-decoration: none;
+    color: #fff;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a button {
+    margin-top: 2vw;
+    border: solid transparent;
+    color: white;
+    background-color: #D0021B;
+    padding: 1vw 2vw;
+    font-family: "Nunito Sans", sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 1vw;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #940011;
+    transition: 0.3s;
+    cursor: pointer;
+}
