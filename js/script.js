@@ -55,3 +55,24 @@ const navSlide = () => {
 };
 
 navSlide();
+
+const modalOperation = () => {
+    const signupbtn = document.getElementById("signup");
+    const loginbtn = document.getElementById("login");
+    const modal = document.querySelector(".modal-window");
+    const closebtn = document.querySelector(".close-modal-btn");
+
+    signupbtn.addEventListener("click", () => {
+        modal.classList.toggle("hidden");
+    });
+
+    loginbtn.addEventListener("click", () => {
+        modal.classList.toggle("hidden");
+    });
+
+    closebtn.addEventListener("click", () => {
+        modal.classList.add("hidden");
+    });
+}
+
+modalOperation();

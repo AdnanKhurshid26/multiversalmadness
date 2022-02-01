@@ -28,6 +28,7 @@
 <body>
 
     <div class="backdrop overlay hidden"></div>
+
     <header id="header">
         <nav>
             <div class="logo">
@@ -37,10 +38,10 @@
                 <li><a class="main-nav-link home btn-cta" href="">home</a></li>
                 <li><a class="main-nav-link posts" href="#posts">posts</a></li>
                 <li>
-                    <button class="main-nav-link signup">sign up</button>
+                    <button class="main-nav-link signup" id="signup">sign up</button>
                 </li>
 
-                <li><button class="main-nav-link login">login</button></li>
+                <li><button class="main-nav-link login" id="login">login</button></li>
             </ul>
             <div class="burger">
                 <i class="fas fa-bars"></i>
@@ -88,6 +89,58 @@
             </div>
         </div>
     </section>
+    <div class="modal-window">
+        <div class="signup-modal">
+            <button class="close-modal-btn">&times;</button>
+            <h1>Sign Up</h1>
+            <p>Already Signed Up? <a href="">Login</a></p>
+            <form class="signup-form" action="">
+                <div class="input-field-signup">
+                    <label for="">Username</label>
+                    <input type="text" name="username" id="">
+                </div>
+                <div class="input-field-signup">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="">
+                </div>
+                <div class="input-field-signup">
+                    <label for="">Password</label>
+                    <input type="password" name="password" id="">
+                </div>
+                <div class="input-field-signup">
+                    <label for="">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="">
+                </div>
+                <div class="input-field-signup">
+                    <button class="signup-login-btn">Sign Up</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- <div class="modal-window hidden">
+        <div class="signup-modal">
+            <button class="close-modal-btn">&times;</button>
+            <h1>Login</h1>
+            <p>Not Signed Up? <a href="">Sign Up</a></p>
+            <form class="signup-form" action="">
+                <div class="input-field-signup">
+                    <label for="">Username</label>
+                    <input type="text" name="username" id="">
+                </div>
+
+                <div class="input-field-signup">
+                    <label for="">Password</label>
+                    <input type="password" name="password" id="">
+                </div>
+
+                <div class="input-field-signup">
+                    <button class="signup-login-btn">LOGIN</button>
+                </div>
+
+            </form>
+        </div>
+    </div> -->
     <footer>
         <div class="top">
             <div class="left">
